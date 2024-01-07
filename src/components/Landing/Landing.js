@@ -179,9 +179,7 @@ function Landing() {
                                         <h2>
                                         Resume
                                         </h2>
-
-                                      
-                                    </Button>
+                                        </Button>
                                 </a>
                             )}
                             <NavLink

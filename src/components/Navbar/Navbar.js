@@ -9,6 +9,9 @@ import { makeStyles } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
 import CloseIcon from "@material-ui/icons/Close";
 
+
+import { IoMenuSharp, IoHomeSharp } from "react-icons/io5";
+
 import "./Navbar.css";
 import { headerData } from "../../data/headerData";
 import { ThemeContext } from "../../contexts/ThemeContext";
@@ -180,18 +183,15 @@ function Navbar() {
             />
           )}
           {/* <NightsStayIcon color="primary" /> */}
-          <CloseIcon
-            className={classes.navMenu}
-            onClick={handleDrawerOpen}
-            aria-label="Menu"
-          />
-        </div>
-
-        {/* <IoMenuSharp
+         
+           <IoMenuSharp
                     className={classes.navMenu}
                     onClick={handleDrawerOpen}
                     aria-label='Menu'
-                /> */}
+                /> 
+        </div>
+
+        
       </div>
       <Drawer
         variant="temporary"
@@ -230,7 +230,7 @@ function Navbar() {
             <Fade left>
               <NavLink to="/" smooth={true} spy="true" duration={2000}>
                 <div className={classes.drawerItem}>
-                  <CloseIcon className={classes.drawerIcon} />
+                  <IoHomeSharp className={classes.drawerIcon} />
                   <span className={classes.drawerLinks}>Home</span>
                 </div>
               </NavLink>
